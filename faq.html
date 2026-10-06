@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ & Contato • Urbano & Distortion Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">CAPÃO & DISTORTION</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="lineup.html">Line-up</a></li>
+        <li><a href="ingressos.html">Ingressos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">PERGUNTAS FREQUENTES</h1>
+    <p class="page-intro">Tire suas dúvidas ou envie uma mensagem para a nossa equipe.</p>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>Qual a classificação de idade?</h3>
+        <p>A classificação mínima é de 16 anos. Menores de 16 anos entram apenas acompanhados dos pais ou responsáveis legais.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Como recebo meu ingresso digital?</h3>
+        <p>O ingresso é enviado diretamente para o e-mail cadastrado em formato QR Code assim que o pagamento for aprovado.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Haverá meia-entrada?</h3>
+        <p>Sim, garantida por lei para estudantes, idosos, PCD e professores da rede pública, mediante comprovação na entrada.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Onde posso comprar alimentação?</h3>
+        <p>Teremos uma praça de alimentação diversificada com opções veganas, vegetarianas e tradicionais que aceitam cartão e Pix.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Posso transferir meu ingresso para outra pessoa?</h3>
+        <p>Sim, a troca de titularidade pode ser realizada através do app oficial de compras até 24h antes do início do festival.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Onde fica o guarda-volumes?</h3>
+        <p>O serviço de Lockers estará disponível logo na entrada do evento mediante reserva antecipada pelo site.</p>
+      </div>
+    </div>
+
+    <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 20px;">FALE CONOSCO</h2>
+    
+    <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" required placeholder="Digite seu nome">
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" required placeholder="seuemail@exemplo.com">
+      </div>
+
+      <div class="form-group">
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" required placeholder="Dúvida, sugestão ou suporte">
+      </div>
+
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" rows="5" required placeholder="Escreva sua mensagem aqui..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Enviar Mensagem</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <p>Capão & Distortion Festival © 2026 • Desenvolvido por Nome 1 e Nome 2</p>
+  </footer>
+
+</body>
+</html>
